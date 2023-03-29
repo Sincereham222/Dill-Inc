@@ -104,10 +104,9 @@ body {
   }
   
   /* product */
-  .container{
-    text-align: center;
-  }
+
   #products {
+    text-align: center;
     padding: 40px 0;
   }
   
