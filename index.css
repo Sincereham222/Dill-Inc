@@ -138,6 +138,7 @@ body {
   }
   
   #buybutton{
+    text-decoration: none;
     background-color: #2ecc71;
     color: #fff;
     padding: 10px 20px;
@@ -170,10 +171,15 @@ body {
   }
 
   .product-button{
+    border-style: none;
     background-color: #2ecc71;
     color: #fff;
-    padding: 3px 10px;
+    padding: 6px 20px;
     border-radius: 5px;
     font-size: 18px;
     transition: background-color 0.3s ease;
+  }
+
+  .product-button:hover{
+    background-color: #27ae60;
   }
