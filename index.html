@@ -46,19 +46,14 @@
       </section>
 
 
-
-
-
-
       <section id="products">
         <div class="container">
           <h2>Our Products</h2>
           <div class="product">
-          <p></p>
             <h5>DillHat 1</h5>
             <p>DillHat has the Standard, Pro, and Pro Max, starting at $0.25.</p>
-            <button class="product-button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">View Image</button>
-              <div class="modal fade" id="myModal">
+            <button class="product-button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">View Image</button>
+              <div class="modal fade" id="myModal1">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -71,12 +66,13 @@
                   </div>
                 </div>
               </div>            
-            </div>
+          </div>
 
+          <div class="product">
             <h5>DillTopHat</h5>
             <p>DillTopHat has the Mini, Standard, Pro, and Pro Max, starting at $1.</p>
-            <button class="product-button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">View Image</button>
-              <div class="modal fade" id="myModal">
+            <button class="product-button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">View Image</button>
+              <div class="modal fade" id="myModal2">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -89,14 +85,12 @@
                   </div>
                 </div>
               </div>            
-            </div>
+          </div>    
 
-            <br>
-            <br>
-            <br>
-
-
-
+          <br>
+          <br>
+          <br>
+          
           <a id="buybutton" href="https://forms.gle/LmBZFArv9RUmpYLP8">Buy Now!</a>
         </div>
       </section>
@@ -104,12 +98,12 @@
       <script>
         $(document).ready(function(){
           // Show the modal when the button is clicked
-          $("#myBtn").click(function(){
-            $("#myModal").modal();
+          $(".product-button").click(function(){
+            var targetModal = $(this).data("target");
+            $(targetModal).modal();
           });
         });
-        </script>
-        
+      </script>
 
       <section id="contact">
         <div class="container">
@@ -119,4 +113,9 @@
             <li>Phone: 123-456-7890</li>
             <li>Email: dillinc@gmail.com</li>
             <li>Bendover street</li>
-
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
