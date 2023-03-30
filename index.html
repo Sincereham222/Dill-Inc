@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="icon" href="./images/not-products/icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   </head>
   <body>
     <header>
@@ -40,27 +45,71 @@
         </div>
       </section>
 
+
+
+
+
+
       <section id="products">
         <div class="container">
           <h2>Our Products</h2>
           <div class="product">
-            <img src="boater.jpg" alt="Paper boater hat">
-            <h3>Paper boater hat</h3>
-            <p>Our paper boater hats are a classic look that never goes out of style. They come in a variety of colors and styles to suit any occasion.</p>
-          </div>
-          <div class="product">
-            <img src="tophat.jpg" alt="Paper top hat">
-            <h3>Paper top hat</h3>
-            <p>Our paper top hats are perfect for formal events and dress-up occasions. They come in a variety of colors and styles to suit any occasion.</p>
-          </div>
-          <div class="product">
-            <img src="talltophat.jpg" alt="Tall paper top hat">
-            <h3>Tall paper top hat </h3>
-            <p>Our tall paper top hats are perfect for very formal events and dress-up occasions. They come in a variety of colors and styles to suit any occasion.</p>
-          </div>
+          <p></p>
+            <h5>DillHat 1</h5>
+            <p>DillHat has the Standard, Pro, and Pro Max, starting at $0.25.</p>
+            <button class="product-button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">View Image</button>
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">DillHat</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                      <img src="/images/products/dillhat1.jpg" alt="DillHat 1" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>            
+            </div>
+
+            <h5>DillTopHat</h5>
+            <p>DillTopHat has the Mini, Standard, Pro, and Pro Max, starting at $1.</p>
+            <button class="product-button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">View Image</button>
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">DillTopHat</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                      <img src="/images/products/dilltophat.jpg" alt="DillHat 1" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>            
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+
+
           <a id="buybutton" href="https://forms.gle/LmBZFArv9RUmpYLP8">Buy Now!</a>
         </div>
       </section>
+
+      <script>
+        $(document).ready(function(){
+          // Show the modal when the button is clicked
+          $("#myBtn").click(function(){
+            $("#myModal").modal();
+          });
+        });
+        </script>
+        
 
       <section id="contact">
         <div class="container">
