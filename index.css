@@ -183,3 +183,7 @@ body {
   .product-button:hover{
     background-color: #27ae60;
   }
+
+  img{
+    border-radius: 5px;
+  }
